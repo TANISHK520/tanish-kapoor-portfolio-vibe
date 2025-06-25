@@ -41,7 +41,7 @@ const Home = () => {
             {/* Profile Image */}
             <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl transform hover:scale-110 transition-transform duration-300 border-4 border-gradient-to-r from-blue-500 to-purple-600">
               <img 
-                src="/lovable-uploads/0835bed3-aee0-414b-907f-86e8d24787a8.png" 
+                src="/lovable-uploads/0072ab3c-f48f-49f4-b99c-aa5effd5a111.png" 
                 alt="Tanish Kapoor" 
                 className="w-full h-full object-cover"
               />
