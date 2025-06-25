@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from 'react';
-import { Code, Database, Server, Tool, Globe, Brain } from 'lucide-react';
+import { Code, Database, Server, Wrench, Globe, Brain } from 'lucide-react';
 
 const Skills = () => {
   const [animatedSkills, setAnimatedSkills] = useState({});
@@ -45,7 +44,7 @@ const Skills = () => {
     },
     {
       title: "DevOps & Tools",
-      icon: <Tool className="w-6 h-6" />,
+      icon: <Wrench className="w-6 h-6" />,
       color: "from-orange-500 to-red-500",
       skills: [
         { name: "Docker", level: 82, description: "Containerization, multi-stage builds" },
@@ -183,7 +182,7 @@ const Skills = () => {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-4 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center">
-                  <Tool className="w-8 h-8 text-purple-600" />
+                  <Wrench className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                   Modern Toolchain
