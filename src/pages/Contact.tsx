@@ -65,8 +65,8 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "7015614223",
-      href: "tel:+917015614223",
+      value: "7015614225",
+      href: "tel:+917015614225",
       color: "from-green-500 to-emerald-500"
     },
     {
