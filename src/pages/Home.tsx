@@ -38,9 +38,13 @@ const Home = () => {
 
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
-            {/* Profile Image Placeholder */}
-            <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-2xl transform hover:scale-110 transition-transform duration-300">
-              TK
+            {/* Profile Image */}
+            <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl transform hover:scale-110 transition-transform duration-300 border-4 border-gradient-to-r from-blue-500 to-purple-600">
+              <img 
+                src="/lovable-uploads/0835bed3-aee0-414b-907f-86e8d24787a8.png" 
+                alt="Tanish Kapoor" 
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Main Heading */}
