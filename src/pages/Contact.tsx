@@ -1,10 +1,10 @@
-
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +15,9 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+
+  // Initialize EmailJS with your public key
+  emailjs.init('9qt3au_lKzPSBkPXH');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,15 +31,28 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        'service_8xct40h', // Your service ID
+        'template_q61rhtd', // Your template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: 'kapoortanish74@gmail.com' // Your email
+        }
+      );
+
+      console.log('Email sent successfully:', result);
       
       toast({
-        title: "Message Sent!",
+        title: "Message Sent Successfully!",
         description: "Thank you for reaching out. I'll get back to you soon!",
       });
       
+      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -44,9 +60,10 @@ const Contact = () => {
         message: ''
       });
     } catch (error) {
+      console.error('Email sending failed:', error);
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
+        title: "Error Sending Message",
+        description: "Something went wrong. Please try again or contact me directly.",
         variant: "destructive",
       });
     } finally {
