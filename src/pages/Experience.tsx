@@ -21,6 +21,24 @@ const Experience = () => {
         "Integrated front-end optimizations with QuickBooks' cloud-based infrastructure"
       ]
     },
+        {
+      title: "Software Engineer",
+      company: "Persistent Systems Limited",
+      location: "Gurugram, India",
+      period: "Sept 2023 - Present",
+      type: "Full-time",
+      description: "Working on QuickBooks integration and legacy system optimization",
+      achievements: [
+        "Refactored and optimized legacy codebase by replacing moment.js with lightweight day.js across multiple modules",
+        "Significantly reduced bundle size and improved application load performance",
+        "Optimized Front-End Performance with Lazy Loading techniques in QuickBooks' front-end (React-based)",
+        "Enhanced page load efficiency and improved user experience",
+        "Enhanced UI Responsiveness for Scalable Design by developing refined responsive UI components",
+        "Utilized modern JavaScript frameworks (React) to support seamless interactions",
+        "Collaborated on Home-Based Team during Agile development process",
+        "Integrated front-end optimizations with QuickBooks' cloud-based infrastructure"
+      ]
+    },
     {
       title: "Full Stack Software Development Intern",
       company: "Persistent Systems Limited",
