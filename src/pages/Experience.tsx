@@ -7,7 +7,7 @@ const Experience = () => {
       title: "Software Engineer",
       company: "Persistent Systems Limited",
       location: "Gurugram, India",
-      period: "Sept 2023 - Present",
+      period: "Jan 2025 - Present",
       type: "Full-time",
       description: "Working on QuickBooks integration and legacy system optimization",
       achievements: [
@@ -24,19 +24,18 @@ const Experience = () => {
         {
       title: "Software Engineer",
       company: "Persistent Systems Limited",
-      location: "Gurugram, India",
-      period: "Sept 2023 - Present",
+      location: "Pune, India",
+      period: "Sept 2023 - Dec 2024",
       type: "Full-time",
-      description: "Working on QuickBooks integration and legacy system optimization",
+      description: "Developed Smart Document Management Platform for Medical Vender",
       achievements: [
-        "Refactored and optimized legacy codebase by replacing moment.js with lightweight day.js across multiple modules",
-        "Significantly reduced bundle size and improved application load performance",
-        "Optimized Front-End Performance with Lazy Loading techniques in QuickBooks' front-end (React-based)",
-        "Enhanced page load efficiency and improved user experience",
+        "Built a high-performance system with RBAC, version control, and secure file management using React.js, Node.js, and MongoDB",
+        "Implemented TypeScript and JWT tokens for robust user authentication and secure file access across platforms",
+        "Engineered Teams and Tasks features using React.js and MongoDB for enhanced project management and collaboration.",
+        "Created a Vault feature for secure document access with a 4-digit PIN, using Vault Token storage in Node.js.",
         "Enhanced UI Responsiveness for Scalable Design by developing refined responsive UI components",
-        "Utilized modern JavaScript frameworks (React) to support seamless interactions",
-        "Collaborated on Home-Based Team during Agile development process",
-        "Integrated front-end optimizations with QuickBooks' cloud-based infrastructure"
+        "Implemented email functionality for critical routes like password and PIN resets using Nodemailer",
+        "Built a notification system to alert users on file sharing, designation changes, and team updates using React.js."
       ]
     },
     {
