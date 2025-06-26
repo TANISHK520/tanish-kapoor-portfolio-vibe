@@ -29,11 +29,42 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated Background Elements */}
+        {/* Technology Background Images */}
         <div className="absolute inset-0 overflow-hidden">
+          {/* Animated Background Elements */}
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 animate-pulse"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-green-400 to-blue-500 rounded-full opacity-10 animate-pulse" style={{ animationDelay: '2s' }}></div>
+          
+          {/* Technology Images */}
+          <div className="absolute top-20 left-10 w-48 h-32 rounded-lg overflow-hidden opacity-20 transform rotate-12 hover:opacity-30 transition-opacity duration-300">
+            <img 
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" 
+              alt="Code on monitor" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute top-32 right-20 w-40 h-28 rounded-lg overflow-hidden opacity-20 transform -rotate-6 hover:opacity-30 transition-opacity duration-300">
+            <img 
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop" 
+              alt="Circuit board" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute bottom-40 left-20 w-44 h-30 rounded-lg overflow-hidden opacity-20 transform rotate-6 hover:opacity-30 transition-opacity duration-300">
+            <img 
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" 
+              alt="MacBook with code" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute bottom-20 right-16 w-40 h-28 rounded-lg overflow-hidden opacity-20 transform -rotate-12 hover:opacity-30 transition-opacity duration-300">
+            <img 
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop" 
+              alt="Person using MacBook" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         <div className="container mx-auto px-6 text-center relative z-10">
@@ -121,6 +152,64 @@ const Home = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Showcase Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+              Technology Stack
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="relative group">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
+                    alt="Laptop technology" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                    <div className="p-6 text-white">
+                      <h3 className="text-xl font-bold mb-2">Frontend Development</h3>
+                      <p className="text-sm opacity-90">React, TypeScript, Tailwind CSS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative group">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
+                    alt="Server technology" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                    <div className="p-6 text-white">
+                      <h3 className="text-xl font-bold mb-2">Backend Development</h3>
+                      <p className="text-sm opacity-90">Node.js, Express, MongoDB</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative group">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" 
+                    alt="Circuit board technology" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                    <div className="p-6 text-white">
+                      <h3 className="text-xl font-bold mb-2">Full Stack Solutions</h3>
+                      <p className="text-sm opacity-90">End-to-end development</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
