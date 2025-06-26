@@ -20,8 +20,12 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             {/* Profile Image */}
             <div className="text-center">
-              <div className="w-64 h-64 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-6xl font-bold shadow-2xl mb-6">
-                TK
+              <div className="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-2xl transform hover:scale-110 transition-transform duration-300 border-4 border-gradient-to-r from-blue-500 to-purple-600 mb-6">
+                <img 
+                  src="/lovable-uploads/0072ab3c-f48f-49f4-b99c-aa5effd5a111.png" 
+                  alt="Tanish Kapoor" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="space-y-2 text-gray-600 dark:text-gray-400">
                 <div className="flex items-center justify-center gap-2">
