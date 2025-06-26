@@ -24,7 +24,7 @@ const Resume = () => {
       title: "Contact Information",
       content: [
         "📧 kapoortanish74@gmail.com",
-        "📱 7015614223",
+        "📱 7015614225",
         "🔗 linkedin.com/in/tanishkapoor07",
         "📍 Gurugram, India"
       ]
